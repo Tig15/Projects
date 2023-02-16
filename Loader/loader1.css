@@ -1,0 +1,65 @@
+body{
+    background-color: rgb(112, 144, 133);
+}
+
+.loader{
+    height: 25px;
+    width: 125px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: .6rem;
+    font-size: large;
+    transform: translate(-50%, 50%);
+    text-align: center;
+}
+
+.loader::after,
+.loader::before{
+    position: absolute;
+    content: "";
+    width: 12px;
+    height: 8px;
+    border-radius: 12px;
+   animation: load 0.5s ease-in-out 0.2s infinite alternate; 
+}
+
+.loader::before{
+    right: 0;
+    background-image: linear-gradient(rgb(112, 144, 133),rgb(17, 16, 17));
+    margin: -12px;
+}
+
+.loader::after{
+    left: 0;
+    background-image: linear-gradient(rgb(12, 11, 12), rgb(112, 144, 133));
+    margin: 12px;
+}
+
+@keyframes load {
+    0%{
+        right:0;
+        left:0;
+        
+    }
+    25%{
+        right: 25%;
+        left: 25%;
+    }
+    50%{
+        right: 50%;
+        left: 50%;
+    }
+    75%{
+        right: 75%;
+        left: 75%;
+    }
+    100%{
+        right: 100%;
+        left: 100%;
+    }
+}
+

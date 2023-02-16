@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    position: absolute;
+    left: 40%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.battery{
+    display: flex;
+    align-items: center;
+}
+
+.main-container{
+    position: relative;
+    width: 350px;
+    height: 165px ;
+    padding: 12px ;
+    border-radius: 18px ;
+    background: wheat ;
+}
+
+.right-bar{
+    width: 15px ;
+    height: 101px ;
+    border-radius: 12px ;
+    background: black ;
+    margin-left: 2px ;
+}
+
+.main-container > .charging-bar{
+    position: relative;
+    background: green ;
+    border-radius: 15px ;
+    width: 20px ;
+    height: 100% ;
+    z-index: 10 ;
+    animation: battery 5s linear ;
+}
+
+@keyframes battery {
+    0% {
+        width:0;
+    }
+}
+
+.main-container > .charging-info{
+    position: absolute;
+    content: "";
+    inset: 0;
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+    z-index: 12 ;
+    font-size: 45px;
+    width: 100%;
+}
+
+img{
+    width: 40%;
+    display: none;
+}
+
+.other-info{
+    position: absolute;
+    inset: 10px ;
+    z-index: 12 ;
+    display: none;
+}

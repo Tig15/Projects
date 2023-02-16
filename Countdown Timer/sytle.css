@@ -1,0 +1,42 @@
+body{
+    display: grid;
+    height: 100vh;
+    place-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    animation: changeBg 7s infinite alternate linear;
+}
+
+@keyframes changeBg {
+    0%{
+        background-color: rgb(177, 161, 142);
+    }
+    25%{
+        background-color: rgb(224, 174, 108);
+    }
+    50%{
+        background-color: rgb(81, 119, 121);
+    }
+    75%{
+        background-color: rgb(239, 162, 106);
+    }
+    100%{
+        background-color: rgb(41, 64, 105);
+    }
+    
+}
+
+.oval{
+    height: 250px;
+    width: 850px;
+    background-image: linear-gradient( rgb(118 119 118),rgb(118 119 118) );
+    border-radius: 50%;
+    box-shadow:12px 12px 40px rgb(168 203 168), -12px -12px 40px rgb(145 145 200) ;
+
+}
+
+h2{
+    margin-top: 80px;
+    text-align: center;
+    font-size: 4rem;
+    font-family: 'Times New Roman', Times, serif;
+}
