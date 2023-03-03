@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Quadratic Equation By Javascript </title>
+</head>
+
+<body>
+    <div class="class">
+        Quadratic Equation By Javascript
+    </div>
+    <script>
+        let root1, root2
+
+        const a = prompt("Enter Your First Number: ")
+        const b = prompt("Enter Your Second Number: ")
+        const c = prompt("Enter Your Third Number: ")
+
+        const d = b * b - 4 * a * c
+
+        if (d > 0) {
+            root1 = (-b + Math.sqrt(d)) / 2 * a
+            root2 = (-b - Math.sqrt(d)) / 2 * a
+
+            console.log(`The roots of Quadratic Equation are ${root1} and ${root2}`)
+        }
+        else if (d == 0) {
+            root1 = root2 = -b / (2 * a)
+            console.log(`The roots of Quadratic Equation are ${root1} and ${root2}`)
+        }
+        else {
+            realpart = (-b / (2 * a)).toFixed(2)
+            imgpart = (Math.sqrt(-d) / 2 * a).toFixed(2)
+
+            console.log(`The roots of Quadratic Equations are ${realpart} - ${imgpart}i and ${realpart} + ${imgpart}i `)
+        }
+    </script>
+</body>
+
+</html>

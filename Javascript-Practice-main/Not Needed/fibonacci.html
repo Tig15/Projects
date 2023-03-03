@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonacci Sequence</title>
+    <style>
+        .fibo{
+            border: 2px solid seagreen;
+            border-radius: 4px;
+            text-align: center;
+            padding: 6px;
+            margin: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="fibo">+
+        Let's Make a Fibonacci Sequence...
+    </div>
+    <!-- // program to generate fibonnaci series upto n terms
+    const a = parseInt(prompt("Enter Your Number"))
+        let n1=0, n2=1, nextTerm
+
+        console.log("Fibonacci Series: ")
+        for(i=1; i<=a; i++){
+            console.log(n1)
+            nextTerm = n1 + n2
+            n1 = n2
+            n2 = nextTerm
+        } -->
+    <script> 
+        // Program to generate fibonnaci series upto certain number
+        const a = parseInt(prompt("Enter a positive number: "))
+        let n1=0, n2=1, nextTerm;
+
+        console.log("Fibonacci Series: ")
+        console.log(n1)
+        console.log(n2)
+
+        nextTerm = n1 + n2
+
+        while(nextTerm <= a){
+             console.log(nextTerm)
+
+             n1 = n2
+             n2 = nextTerm
+             nextTerm = n1 + n2
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odd and Even</title>
+    <style>
+        .digits{
+            border: 4px solid chocolate;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 10px;
+            margin: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="digits">
+        Check whether the number is odd or even... 
+    </div>
+    <script>
+        const a = prompt("Enter Your Number: ")
+
+        if(a % 2 == 0){
+                console.log(`The number ${a} is Even`)
+        }
+        else{
+            console.log(`The number ${a} is Odd`)
+        }
+    </script>
+</body>
+</html>

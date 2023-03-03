@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime</title>
+    <style>
+        .prime{
+            border: 7px solid crimson;
+            border-radius: 10px;
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding: 24px;
+            margin: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="prime">
+        Check whether the number is prime or not...
+    </div>
+    <script>
+        const a = parseInt(prompt("Enter Your Positive Number"))
+        let isPrime = true;
+
+        if(a === 1){
+            console.log("1 is neither prime number nor composite")
+        }
+        else if(a > 1){
+            for(i = 2; i < a; i++){
+                if(a % i == 0){
+                    isPrime = false;
+                    break;
+                }
+            }
+            if(isPrime){
+                console.log(`The number ${a} is prime`)
+            }
+            else{
+                console.log(`The number ${a} is not prime`)
+            }
+        }
+        else{
+            console.log("The number is not positive")
+        }
+    </script>
+</body>
+</html>

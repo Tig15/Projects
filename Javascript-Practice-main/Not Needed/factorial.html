@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial</title>
+    <style>
+        .fact{
+            border: 9px solid magenta;
+            border-radius: 5px;
+            text-align: center;
+            padding: 20px;
+            margin: 22px;
+        }
+    </style>
+</head>
+<body>
+    <div class="fact">
+        Find the factorial number...
+    </div>
+    <script>
+        const a = parseInt(prompt("Enter Your Number: "))
+
+        if(a < 1){
+            console.log("Error! The factorial number does not exist.")
+        }
+        else if(a == 0){
+            console.log(`The factorial of ${a} is 1`)
+        }
+        else{
+            let fact = 1;
+            for(i = 1; i<=a; i++){
+                fact *= i
+            }
+            console.log(`The factorial of ${a} is ${fact}`)
+        }
+    </script>
+</body>
+</html>
